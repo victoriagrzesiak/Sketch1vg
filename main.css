@@ -1,0 +1,373 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background: linear-gradient( to right, #000046, #1cb5e0);
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+
+.pumpkin-fake{
+	position: absolute;
+	bottom: 70px;
+	left: 50px;
+	width: 297px;
+	height: 280px; 
+	border-radius: 100%;
+	background: radial-gradient(#2a160b, #743118, #491805);
+	z-index: 1;
+}
+
+.cloth{
+	position: absolute;
+	bottom: 0px;
+	left: 100px;
+	width: 900px;
+	height: 500px;
+	background-color: rgb(170,160,145);
+	transform: rotate(2deg);
+}
+
+.leaf-one {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 420px;
+	right: 100px; /* -- shift from the right side point */
+	border-left: 300px solid transparent; /* -- left point */
+	border-right: 420px solid transparent;/* -- right point */
+	border-bottom: 120px; 
+	background-color: rgb(50,65,20);
+	z-index: 2;
+	transform: rotate( 10deg);
+}
+
+.leaf-two {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 380px;
+	right: 60px; /* -- shift from the right side point */
+	border-left: 300px solid transparent; /* -- left point */
+	border-right: 420px solid transparent;/* -- right point */
+	border-bottom: 220px solid green;
+	transform: rotate( 2deg);
+	z-index: 3;
+}
+
+.leaf-three {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 280px;
+	right: 200px; /* -- shift from the right side point */
+	border-left: 300px solid transparent; /* -- left point */
+	border-right: 120px solid transparent;/* -- right point */
+	border-bottom: 120px solid green;
+	z-index: 4;
+	transform: rotate( 40deg)
+}
+
+
+.leaf-four {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 300px;
+	right: 100px; /* -- shift from the right side point */
+	border-left: 270px solid transparent; /* -- left point */
+	border-right: 120px solid transparent;/* -- right point */
+	border-bottom: 120px solid green;
+	z-index: 5;
+	transform: rotate( 60deg)
+}
+
+.leaf-five {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 310px;
+	right: 100px; /* -- shift from the right side point */
+	border-left: 370px solid transparent; /* -- left point */
+	border-right: 120px solid transparent;/* -- right point */
+	border-bottom: 120px solid green;
+	z-index: 6;
+	transform: rotate( 10deg)
+}
+
+
+.rflower-one{
+	position: absolute;
+	top: 200px;
+	right: 200px;
+	width: 180px;
+    height: 160px;
+    background: radial-gradient(#f78370, #ff1d00); 
+    z-index: 8;
+    border-radius: 50%
+}
+
+.rrflower-one{
+	position: absolute;
+	top: 225px;
+	right: 230px;
+	width: 115px;
+    height: 110px;
+    background: radial-gradient(#f6a396, #ff0000);
+    z-index: 8;
+    border-radius: 50%
+}
+
+
+
+.rflower-two{
+	position: absolute;
+	top: 40px;
+	right: 30px;
+	width: 150px;
+    height: 130px;
+    background: radial-gradient(#f78370, #ff1d00);
+    z-index: 8;
+    border-radius: 50%
+}
+
+.rrflower-two{
+	position: absolute;
+	top: 60px;
+	right: 60px;
+	width: 95px;
+    height: 90px;
+    background: radial-gradient(#f6a396, #ff0000);
+    z-index: 8;
+    border-radius: 50%
+}
+
+.rflower-three{
+	position: absolute;
+	top: 450px;
+	right: 70px;
+	width: 155px;
+    height: 150px;
+    background: radial-gradient(#f78370, #ff1d00);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.rrflower-three{
+	position: absolute;
+	top: 475px;
+	right: 95px;
+	width: 105px;
+    height: 100px;
+    background: radial-gradient(#f6a396, #ff0000);
+    z-index: 8;
+    border-radius: 50%
+    
+}
+
+
+
+
+
+
+
+
+.wflower-one{
+	position: absolute;
+	top: 400px;
+	right: 630px;
+	width: 55px;
+    height: 61px;
+    background: linear-gradient( to right, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-two{
+	position: absolute;
+	top: 350px;
+	right: 500px;
+	width: 55px;
+    height: 60px;
+    background: linear-gradient( to bottom, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+}
+
+.wflower-three{
+	position: absolute;
+	top: 490px;
+	right: 570px;
+	width: 58px;
+    height: 60px;
+    background: linear-gradient( to left, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+}
+
+.wflower-four{
+	position: absolute;
+	top: 490px;
+	right: 370px;
+	width: 61px;
+    height: 55px;
+    background: linear-gradient( to right, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-five{
+	position: absolute;
+	top: 320px;
+	right: 350px;
+	width: 62px;
+    height: 58px;
+    background: linear-gradient( to left, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-six{
+	position: absolute;
+	top: 320px;
+	right: 170px;
+	width: 55px;
+    height: 58px;
+    background: linear-gradient( to right, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-seven{
+	position: absolute;
+	top: 380px;
+	right: 120px;
+	width: 70px;
+    height: 68px;
+    background: linear-gradient( to left, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-eight{
+	position: absolute;
+	top: 230px;
+	right: 115px;
+	width: 62px;
+    height: 69px;
+    background: linear-gradient( to right, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-nine{
+	position: absolute;
+	top: 420px;
+	right: 270px;
+	width: 65px;
+    height: 68px;
+    background: linear-gradient( to bottom, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-o{
+	position: absolute;
+	top: 420px;
+	right: 420px;
+	width: 63px;
+    height: 58px;
+    background: linear-gradient( to left, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-oo{
+	position: absolute;
+	top: 320px;
+	right: 70px;
+	width: 55px;
+    height: 58px;
+    background: linear-gradient( to right, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-op{
+	position: absolute;
+	top: 180px;
+	right: 60px;
+	width: 65px;
+    height: 58px;
+    background: linear-gradient( to right, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+.wflower-oq{
+	position: absolute;
+	top: 410px;
+	right: 20px;
+	width: 75px;
+    height: 78px;
+    background: linear-gradient( to left, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-or{
+	position: absolute;
+	top: 260px;
+	right: 10px;
+	width: 70px;
+    height: 66px;
+    background: linear-gradient( to right, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+.wflower-os{
+	position: absolute;
+	top: 520px;
+	right: 30px;
+	width: 63px;
+    height: 67px;
+    background: linear-gradient( to bottom, #eaff94, #ffffff);
+    z-index: 8;
+    border-radius: 50%
+
+}
+
+
+
+
+
+
+
+
+
